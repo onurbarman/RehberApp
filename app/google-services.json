@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "742633957706",
+    "firebase_url": "https://rehberapp.firebaseio.com",
+    "project_id": "rehberapp",
+    "storage_bucket": "rehberapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:742633957706:android:c4df02f302e63517",
+        "android_client_info": {
+          "package_name": "com.rehberapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "742633957706-612tgug3ejihs9glv3of8oal0vpdcouo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7vErfVL2nqDrxZJCXs1POd75UBufRMLo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
