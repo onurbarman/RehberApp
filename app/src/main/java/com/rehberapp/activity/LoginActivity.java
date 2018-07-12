@@ -1,6 +1,5 @@
-package com.rehberapp;
+package com.rehberapp.activity;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
@@ -15,8 +14,8 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.rehberapp.R;
 import com.rehberapp.model.Kullanici;
-import com.rehberapp.model.Rehber;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -47,6 +46,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void doLogin(final String username, final String password) {
+
         user.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
@@ -61,7 +61,9 @@ public class LoginActivity extends AppCompatActivity {
                             if(kullanici.getPassword().equals(password))
                             {
                                 Toast.makeText(LoginActivity.this,"Başarılı",Toast.LENGTH_SHORT).show();
-                                startActivity(new Intent(LoginActivity.this,RehberActivity.class));
+                                Intent intent=new Intent(LoginActivity.this,RehberActivity.class);
+                                intent.putExtra("userId",kullanici.getId());
+                                startActivity(intent);
                             }
                         }
                     }
