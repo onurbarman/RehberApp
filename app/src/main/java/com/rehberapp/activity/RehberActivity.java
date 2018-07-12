@@ -50,7 +50,7 @@ public class RehberActivity extends AppCompatActivity implements RehberAdapter.O
                     if (dataSnapshot.child(userId).exists())
                     {
                         rehberCls=dataSnapshot.child(userId).getValue(Rehber.class);
-                        rehberList.add(rehberCls);
+                        //rehberList.add(rehberCls);
                     }
 
                 }
